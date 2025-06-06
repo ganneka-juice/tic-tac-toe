@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="shortcut icon" href="tic-tac-toe-svgrepo-com.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="player-x">
+    <div class="loader">
+        <div class="loader-content">
+            <div class="loader-grid">
+                <div class="loader-cell"></div>
+                <div class="loader-cell"></div>
+                <div class="loader-cell"></div>
+                <div class="loader-cell"></div>
+                <div class="loader-cell"></div>
+                <div class="loader-cell"></div>
+                <div class="loader-cell"></div>
+                <div class="loader-cell"></div>
+                <div class="loader-cell"></div>
+            </div>
+            <div class="loader-text">LOADING...</div>
+        </div>
+    </div>
+    <button class="tip-btn" title="Game Rules & Instructions">
+        <i class="fa-solid fa-lightbulb"></i>
+    </button>
+    <div class="tip-content">
+        <h2>Game Rules & Instructions</h2>
+        <h3>Game Modes</h3>
+        <p><strong>Easy Bot:</strong> Makes random moves, perfect for beginners</p>
+        <p><strong>Medium Bot:</strong> Can block your winning moves sometimes</p>
+        <p><strong>Hard Bot:</strong> Plays strategically, very challenging to beat</p>
+        <p><strong>2 Players:</strong> Play against a friend locally</p>
+        <p><strong>3x3 Mode:</strong> Special mode with only 3 marks per player, can move old marks</p>
+    </div>
+    <div class="popup">
+        <h2></h2>
+        <p>Auto reset in <span id="countdown">5</span> seconds</p>
+        <p>Click to restart now</p>
+        <i class="fa-solid fa-rotate"></i>
+    </div>
+    <div class="overlay"></div>
+    <a href="index.html" class="Name" title="Back to Portfolio"><i class="fa-solid fa-code"></i> Bidhan.</a>
+    <div class="container">
+        <div class="status">Player X's Turn</div>
+        <div class="controls">
+            <select class="difficulty-select">
+                <option value="easy">Easy Bot</option>
+                <option value="medium">Medium Bot</option>
+                <option value="hard">Hard Bot</option>
+                <option value="2player">2 Players</option>
+                <option value="3x3">3x3 Mode</option>
+            </select>
+            <button class="reset-btn"><i class="fa-solid fa-rotate"></i> Reset Game</button>
+        </div>
+        <div class="board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+    </div>
+    <div class="footer">
+        <a href="https://www.facebook.com/krishna.bc.17" target="_blank">Game tester: Krishna Budhathoki ❤️</a>
+    </div>
+</body>
+
+</html>
